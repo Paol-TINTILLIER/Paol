@@ -1,0 +1,161 @@
+body {
+    font-family: times, sherif ;
+    font-size: 21px;
+    text-align: center;
+    color: #FFFEFC;
+    background-image:url(AAA/wallpaper.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+html  { 
+  margin:0;
+  padding:0;
+}
+
+h1,h2,h3,h4 {
+    font-weight: bold;
+}
+
+span {
+ border:2px solid gray;
+ padding:5px;
+ }
+
+a {
+   text-decoration: none;
+   color: #FFFEFC;
+   font-style: normal;
+}
+
+a:hover {
+   text-decoration: none;
+   transition:.2s linear;
+   color: #4D90CA;
+   text-shadow: #4D90CA 0 0 10.5px;  
+}
+
+.img-circle {
+    border-radius: 80%;
+    box-shadow: 2px 5px 10px black;
+    margin-top: 6px;
+    margin-left: 235px;
+}
+
+.img-circleback {
+    border-radius: 80%;
+    margin-top: 10px;
+}
+
+.box {
+    background-color: rgba(0,0,0,0.7);
+    padding-left: 25px;   
+    padding-right: 25px; 
+    padding-top: 5px; 
+    padding-bottom: 5px; 
+    margin: 20px auto 45px auto;
+    box-shadow: 3px 3px 15px 7px rgba(0,0,0,0.8);
+    border-radius:5px;
+    width : 800px;
+}
+
+@media (max-width: 700px) {
+    .box {
+        width: 540px;
+    }
+    h3 {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 500px) {
+    .box {
+        width: 370px;
+    }
+    h3 {
+        font-size: 18px;
+        font-stretch: 5px;
+        line-height: 35px;
+    }
+}
+
+/*img*/
+@media (max-width: 700px) {
+    .img-circle {
+        width: 328px;
+        height: auto;
+        margin-left: 105px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .img-circle {
+        width: 322px;
+        height: auto;
+        margin-left: 29px;
+        margin-top: 11px;
+    }
+}
+
+@media (max-width: 500px) {
+    .img-circleback { 
+        margin-left: 8px;
+        border-radius: 80%;
+    }
+}
+
+
+.social {
+    font-size: 50px;
+    margin: 20px
+}
+
+#hautmil {
+    margin: 10px;
+    margin-top: -10px;
+}
+
+
+li { list-style-type: none; }
+
+
+b { font-weight: bold; }
+
+.hover:hover {
+   color: #5088B6;
+   color: italic;
+}
+
+.gif {
+    width:90px; 
+    height: auto;
+    filter: invert(1);
+}
+
+.changeimg {
+    position: relative;   
+    margin:  0 auto;
+}
+
+.changeimg img {
+    position: absolute;
+    top:0;
+    left:0;
+    overflow: hidden;
+    width : 330px;
+}
+
+
+.changeimg .img-circle {
+  z-index: 9999;
+  transition: opacity .5s linear;
+  cursor: pointer;
+}
+
+.changeimg:hover > .img-circle {
+    opacity: 0;
+}
+
+
